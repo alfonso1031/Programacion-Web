@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6209/6209794.png">
+    <title>Portafolio de Alfonso Arroyo</title>
+    <style>
+        .animation-scroll {
+            animation: scroll-left 20s linear infinite;
+            white-space: nowrap;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        </style>
+</head>
+<body>
+    <header class="bg-primary text-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h3>Alfonso Arroyo</h3>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-light" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-4">
+
+        <section id="home" class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="mb-3">Bienvenido a mi portafolio</h2>
+                <p class="lead mb-4">Soy Alfonso, desarrollador de software junior y estudiante de ingeniería apasionado por el desarrollo y las tecnologías modernas.</p>
+                <a href="#projects" class="btn btn-primary">Explora mi trabajo</a>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="about" class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="./public/img/profile.jpg" alt="Alfonso Arroyo" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-8">
+                    <h2>Sobre mí</h2>
+                    <p>¡Hola! Soy estudiante de Ingeniería de Software en la Universidad de las Fuerzas Armadas "ESPE". Me gusta crear aplicaciones web intuitivas y aprender nuevos frameworks y tecnologias.</p>
+                    <ul>
+                        <li>📚 Estudiante de Ingeniería de Software</li>
+                        <li>💻 Experiencia en Java, Python y Bootstrap</li>
+                        <li>🌐 Desarrollo de un sistema de preventas con DB</li>
+                    </ul>
+                </div>
+            </div>
+         
+
+        <!-- Proyectos -->
+        <section id="projects" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Proyectos</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./public/img/project1.png" class="card-img-top" alt="Sistema de Preventas">
+                            <div class="card-body">
+                                <h5 class="card-title">Sistema de Preventas</h5>
+                                <p class="card-text">Aplicación Java con MongoDB para gestionar preventas de productos, generar informes en PDF y pruebas interactivas de GUI.</p>
+                                <a href="#" class="btn btn-sm btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./public/img/project2.png" class="card-img-top" alt="Blog Personal">
+                            <div class="card-body">
+                                <h5 class="card-title">Blog Personal</h5>
+                                <p class="card-text">Blog responsivo construido con HTML, Bootstrap y JavaScript básico para compartir tutoriales e ideas.</p>
+                                <a href="#" class="btn btn-sm btn-primary">Ver en vivo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./public/img/project3.png" class="card-img-top" alt="Pruebas Automatizadas">
+                            <div class="card-body">
+                                <h5 class="card-title">Pruebas Automatizadas</h5>
+                                <p class="card-text">Pruebas con Cucumber y Selenium para aplicaciones Java con GUI, garantizando fiabilidad en las funcionalidades.</p>
+                                <a href="https://github.com/alfonso1031" class="btn btn-sm btn-primary">Repositorio GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Habilidades -->
+        <section id="skills" class="container py-5">
+            <h2 class="text-center mb-4">Habilidades</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Lenguajes y Frameworks</h5>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>HTML y CSS (Bootstrap)</li>
+                        <li>JavaScript</li>
+                        <li>C++</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Herramientas y Plataformas</h5>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>Git y GitHub</li>
+                        <li>VS Code</li>
+                        <li>Cucumber y Selenium</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Barra de íconos animada -->
+        <section class="bg-light">
+            <div class="container overflow-hidden">
+                <div class="d-flex align-items-center gap-4 animation-scroll">
+                    <img src="./public/icons/java.webp" alt="Java" height="100">
+                    <img src="./public/icons/python.png" alt="Python" height="100">
+                    <img src="./public/icons/vscode.png" alt="VSCode" height="75">
+                    <img src="./public/icons/html.png" alt="HTML" height="80">
+                    <img src="./public/icons/bootstrap.png" alt="Bootstrap" height="50">
+                    <img src="./public/icons/mongodb.png" alt="MongoDB" height="100">
+                    <img src="./public/icons/github.png" alt="GitHub" height="90">
+                    <img src="./public/icons/gitpng.png" alt="Git" height="100">
+                    <img src="./public/icons/cucumber.png" alt="Cucumber" height="100">
+                    <img src="./public/icons/selenium.png" alt="Selenium" height="50">
+                    <img src="./public/icons/c++.png" alt="C++" height="100">
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Sección de Música con tarjetas -->
+        <section id="music" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Mi Música Favorita</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./public/img/music1.jpg" class="card-img-top" alt="Canción 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Drama - C.Tangana</h5>
+                                <audio controls class="w-100">
+                                    <source src="./public/audio/Drama.mp3" type="audio/mpeg">
+                                    Tu navegador no soporta audio.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./public/img/music2.webp" class="card-img-top" alt="Canción 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Wildflower - Billie Eilish</h5>
+                                <audio controls class="w-100">
+                                    <source src="./public/audio/wildflower.mp3" type="audio/mpeg">
+                                    Tu navegador no soporta audio.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./public/img/music3.jpeg" class="card-img-top" alt="Canción 3" width="100" height="407">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Heavydirtysoul - Twenty One Pilots</h5>
+                                <audio controls class="w-100">
+                                    <source src="./public/audio/top.mp3" type="audio/mpeg">
+                                    Tu navegador no soporta audio.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo-video" class="container py-5">
+            <h2 class="text-center mb-4">Video</h2>
+            <div class="d-flex justify-content-center">
+                <video width="640" height="360" autoplay loop muted >
+                    <source src="./public/video/codingVideo.mp4" type="video/mp4">
+                    Tu navegador no soporta vídeo.
+                </video>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contact" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contáctame</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-light py-3 mt-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Alfonso Arroyo. Todos los derechos reservados.</p>
+            <div>
+                <a href="https://api.whatsapp.com/send/?phone=%2B593984808346" class="text-light me-3">Whatsapp</a>
+                <a href="https://github.com/alfonso1031" class="text-light me-3">GitHub</a>
+                <a href="mailto:aaarroyo6@espe.edu.ec?subject=Contacto%20desde%20el%20portafolio&body=%20Desde%20Portafolio%20Web." class="text-light">Correo</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./public/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
