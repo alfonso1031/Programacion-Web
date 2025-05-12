@@ -4,31 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./public/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6209/6209794.png">
     <title>Gustos Personales – Alfonso Arroyo</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="bg-primary text-light py-3">
+    <header id="header" class="bg-primary text-light py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <h3>Alfonso Arroyo</h3>
             <nav>
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html#home">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html#about">Sobre mí</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html#projects">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="gustos-personales.html">Gustos Personales</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="trabajos.html">Trabajos</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html#contact">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="../index.html#home"
+                            onclick="cargarPaginas('../index.html#home')">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="../index.html#about"
+                            onclick="cargarPaginas('../index.html#about')">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="../index.html#projects"
+                            onclick="cargarPaginas('../index.html#projects')">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="../index.html#skills"
+                            onclick="cargarPaginas('../index.html#skills')">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="gustos-personales.html"
+                            onclick="cargarPaginas('./paginas/gustos-personales.html')">Gustos Personales</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="trabajos.html"
+                            onclick="cargarPaginas('./paginas/trabajos.html')">Trabajos</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="../index.html#contact"
+                            onclick="cargarPaginas('index.html#contact')">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+        </header>
 
-    <main class="py-5">
+    <main id="main" class="py-5">
         <section id="gustos-personales" class="container">
             <h2 class="text-center mb-4">Gustos Personales</h2>
             <!-- Música -->
@@ -37,12 +43,12 @@
                 <div class="row g-4">
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="./public/img/music1.jpg" class="card-img-top" alt="Drama - C.Tangana"
+                            <img src="../public/img/music1.jpg" class="card-img-top" alt="Drama - C.Tangana"
                                 loading="lazy">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Drama – C.Tangana</h5>
                                 <audio controls class="w-100">
-                                    <source src="./public/audio/Drama.mp3" type="audio/mpeg">
+                                    <source src="../public/audio/Drama.mp3" type="audio/mpeg">
                                     Tu navegador no soporta audio.
                                 </audio>
                             </div>
@@ -50,12 +56,12 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="./public/img/music2.webp" class="card-img-top" alt="Wildflower – Billie Eilish"
+                            <img src="../public/img/music2.webp" class="card-img-top" alt="Wildflower – Billie Eilish"
                                 loading="lazy">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Wildflower – Billie Eilish</h5>
                                 <audio controls class="w-100">
-                                    <source src="./public/audio/wildflower.mp3" type="audio/mpeg">
+                                    <source src="../public/audio/wildflower.mp3" type="audio/mpeg">
                                     Tu navegador no soporta audio.
                                 </audio>
                             </div>
@@ -64,12 +70,12 @@
                     <div class="col-md-4">
                         <div class="card h-100">
                             <img class="card-img-top" alt="Heavydirtysoul – Twenty One Pilots" loading="lazy" height="412"
-                                width="100%" src="./public/img/music3.jpeg">
-                            <source src="./public/img/music3.jpeg">
+                                width="100%" src="../public/img/music3.jpeg">
+                            <source src="../public/img/music3.jpeg">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Heavydirtysoul – Twenty One Pilots</h5>
                                 <audio controls class="w-100">
-                                    <source src="./public/audio/top.mp3" type="audio/mpeg">
+                                    <source src="../public/audio/top.mp3" type="audio/mpeg">
                                     Tu navegador no soporta audio.
                                 </audio>
                             </div>
@@ -83,7 +89,7 @@
                 <h3 class="text-center mb-3">Video Codificando</h3>
                 <div class="d-flex justify-content-center">
                     <video width="640" height="360" autoplay loop muted loading="lazy">
-                        <source src="./public/video/codingVideo.mp4" type="video/mp4">
+                        <source src="../public/video/codingVideo.mp4" type="video/mp4">
                         Tu navegador no soporta vídeo.
                     </video>
                 </div>
@@ -91,12 +97,22 @@
 
             <!-- Botón para regresar al index -->
             <div class="text-center mt-4">
-                <a href="index.html" class="btn btn-secondary">← Volver al Inicio</a>
+                <a href="../index.html" class="btn btn-secondary">← Volver al Inicio</a>
             </div>
 
         </section>
     </main>
+    <footer id="footer" class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Alfonso Arroyo. Todos los derechos reservados.</p>
+            <div>
+                <a href="https://api.whatsapp.com/send/?phone=%2B593984808346" class="text-light me-3">Whatsapp</a>
+                <a href="https://github.com/alfonso1031" class="text-light me-3">GitHub</a>
+                <a href="mailto:aaarroyo6@espe.edu.ec?subject=Contacto%20desde%20el%20portafolio&body=%20Desde%20Portafolio%20Web." class="text-light">Correo</a>
+            </div>
+        </div>
+    </footer>
 
-    <script src="./public/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

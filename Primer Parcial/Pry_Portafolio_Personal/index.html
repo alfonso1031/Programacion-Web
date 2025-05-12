@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6209/6209794.png">
+    <script src="./public/js/load.js"></script>
     <title>Portafolio de Alfonso Arroyo</title>
     <style>
         .animation-scroll {
@@ -14,36 +15,29 @@
         }
 
         @keyframes scroll-left {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
         }
-        </style>
+    </style>
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="bg-primary text-light py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h3>Alfonso Arroyo</h3>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html#home">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html#about">Sobre mí</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html#projects">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="gustos-personales.html">Gustos Personales</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="trabajos.html">Trabajos</a></li>
-                    <li class="nav-item"><a class="nav-link text-light" href="index.html#contact">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header id="header">
     </header>
 
-    <main class="mt-4">
+
+    <main id="main" class="mt-4">
 
         <section id="home" class="bg-light py-5">
             <div class="container text-center">
                 <h2 class="mb-3">Bienvenido a mi portafolio</h2>
-                <p class="lead mb-4">Soy Alfonso, desarrollador de software junior y estudiante de ingeniería apasionado por el desarrollo y las tecnologías modernas.</p>
+                <p class="lead mb-4">Soy Alfonso, desarrollador de software junior y estudiante de ingeniería apasionado
+                    por el desarrollo y las tecnologías modernas.</p>
                 <a href="#projects" class="btn btn-primary">Explora mi trabajo</a>
             </div>
         </section>
@@ -52,11 +46,13 @@
         <section id="about" class="container py-5">
             <div class="row align-items-center">
                 <div class="col-md-4">
-                    <img src="./public/img/profile.jpg" alt="Alfonso Arroyo" class="img-fluid rounded-circle" loading="lazy" height="200" width="300">
+                    <img src="./public/img/profile.jpg" alt="Alfonso Arroyo" class="img-fluid rounded-circle"
+                        loading="lazy" height="200" width="300">
                 </div>
                 <div class="col-md-8">
                     <h2>Sobre mí</h2>
-                    <p>¡Hola! Soy estudiante de Ingeniería de Software en la Universidad de las Fuerzas Armadas "ESPE". Me gusta crear aplicaciones web intuitivas y aprender nuevos frameworks y tecnologias.</p>
+                    <p>¡Hola! Soy estudiante de Ingeniería de Software en la Universidad de las Fuerzas Armadas "ESPE".
+                        Me gusta crear aplicaciones web intuitivas y aprender nuevos frameworks y tecnologias.</p>
                     <ul>
                         <li>📚 Estudiante de Ingeniería de Software</li>
                         <li>💻 Experiencia en Java, Python y Bootstrap</li>
@@ -76,8 +72,10 @@
                             <img src="./public/img/project1.png" class="card-img-top" alt="Sistema de Preventas">
                             <div class="card-body">
                                 <h5 class="card-title">Sistema de Preventas</h5>
-                                <p class="card-text">Aplicación Java con MongoDB para gestionar preventas de productos, generar informes en PDF y pruebas interactivas de GUI.</p>
-                                <a href="https://github.com/alfonso1031/Sistema-PreVentas/tree/main" class="btn btn-sm btn-primary">Ver Repositorio</a>
+                                <p class="card-text">Aplicación Java con MongoDB para gestionar preventas de productos,
+                                    generar informes en PDF y pruebas interactivas de GUI.</p>
+                                <a href="https://github.com/alfonso1031/Sistema-PreVentas/tree/main"
+                                    class="btn btn-sm btn-primary">Ver Repositorio</a>
                             </div>
                         </div>
                     </div>
@@ -86,7 +84,8 @@
                             <img src="./public/img/project2.png" class="card-img-top" alt="Blog Personal">
                             <div class="card-body">
                                 <h5 class="card-title">Blog Personal</h5>
-                                <p class="card-text">Blog responsivo construido con HTML, Bootstrap y JavaScript básico para compartir tutoriales e ideas.</p>
+                                <p class="card-text">Blog responsivo construido con HTML, Bootstrap y JavaScript básico
+                                    para compartir tutoriales e ideas.</p>
                                 <a href="index.html#home" class="btn btn-sm btn-primary">Ver en vivo</a>
                             </div>
                         </div>
@@ -96,7 +95,8 @@
                             <img src="./public/img/project3.png" class="card-img-top" alt="Pruebas Automatizadas">
                             <div class="card-body">
                                 <h5 class="card-title">Pruebas Automatizadas</h5>
-                                <p class="card-text">Pruebas con Cucumber y Selenium para aplicaciones Java con GUI, garantizando fiabilidad en las funcionalidades.</p>
+                                <p class="card-text">Pruebas con Cucumber y Selenium para aplicaciones Java con GUI,
+                                    garantizando fiabilidad en las funcionalidades.</p>
                                 <a href="https://github.com/alfonso1031" class="btn btn-sm btn-primary">GitHub</a>
                             </div>
                         </div>
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </section>
-        
+
 
         <!-- Habilidades -->
         <section id="skills" class="container py-5">
@@ -169,7 +169,8 @@
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Mensaje</label>
-                                <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Tu mensaje"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar mensaje</button>
                         </form>
@@ -178,19 +179,9 @@
             </div>
         </section>
     </main>
-
-    <!-- Pie de página -->
-    <footer class="bg-dark text-light py-3 mt-4">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2025 Alfonso Arroyo. Todos los derechos reservados.</p>
-            <div>
-                <a href="https://api.whatsapp.com/send/?phone=%2B593984808346" class="text-light me-3">Whatsapp</a>
-                <a href="https://github.com/alfonso1031" class="text-light me-3">GitHub</a>
-                <a href="mailto:aaarroyo6@espe.edu.ec?subject=Contacto%20desde%20el%20portafolio&body=%20Desde%20Portafolio%20Web." class="text-light">Correo</a>
-            </div>
-        </div>
+    <footer id="footer">
     </footer>
-
     <script src="./public/bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
