@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <Form action="procesar_datos.html" method="POST">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Contraseña" required maxlength="12" minlength="8"
+            pattern="[0-9]{8-12}">
+        <br>
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" placeholder="Fecha de nacimiento" required min="1965-01-01"
+            max="2007-12-31">
+        <br>
+        <label for="sexo">Sexo:</label>
+        <input type="checkbox" id="sexoM" name="sexo" value="masculino"> Masculino
+        <input type="checkbox" id="sexoF" name="sexo" value="femenino"> Femenino
+        <input type="checkbox" id="sexoP" name="sexo" value="otro"> Prefiero no decirlo
+        <br>
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="png/jpg/svg">
+        <br>
+        <label for="terminosycondiciones">Aceptar los terminos y condiciones</label>
+        <input type="checkbox" id="terminosycondiciones" name="terminosycondiciones" value="acepto">
+        <br>
+        <label for="intereses">Seleccione las materias de su interes</label>
+        <input type="radio" id="intereses1" name="intereses" value="Desarrollo_de_SW"> Desarrollo de SW
+        <input type="radio" id="intereses2" name="intereses" value="Inteligencia artificial"> Inteligencia artificial
+        <input type="radio" id="intereses3" name="intereses" value="Redes"> Redes
+        <input type="radio" id="intereses4" name="intereses" value="Web"> Web
+        <br>
+        <button type="submit">Enviar</button>
+
+    </Form>
+
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
