@@ -1,17 +1,20 @@
-//cargar el archivo header.html
-fetch('header.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('header').innerHTML = data)
+fetch('./views/inicio.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('contenedor_principal').innerHTML = data)
 
-//cargar el archivo footer.html
-fetch('footer.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('footer').innerHTML = data)
+fetch('./views/trabajos.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('contenedor_principal').innerHTML = data)
+fetch('./views/gustos-personales.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('contenedor_principal').innerHTML = data)
 
-function cargarPaginas(url){
+function cambiarPagina(url) {
+    //url=views/nombre_stio.html
     fetch(url)
-        .then(response => response.text())
-        .then(data => document.getElementById('main').innerHTML = data)
+        .then(res => res.text())
+        .then(data => document.getElementById('contenedor_principal').innerHTML = data)
+
 }
 
-window.onload = () => cargarPaginas('index.html')
+window.onload = () => cambiarPagina('./views/inicio.html')
