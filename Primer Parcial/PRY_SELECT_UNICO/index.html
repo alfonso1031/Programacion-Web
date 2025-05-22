@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT UNICO</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <h1>Introduccion al select</h1>
+        <form action="server.html" method="get">
+            <!--<label for="lenguaje_programacion_fav">Seleccione su lenguaje de programacion favorito</label>
+            <select name="lenguaje_programacion_fav" id="lenguaje_programacion_fav">
+                <option value="" disabled selected>--seleccione--</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="C#" disabled>C#</option>
+                <option value="php">PHP</option>
+                <option value="nodejs">Node.js</option>
+            </select> -->
+
+            <!-- <label for="lenguaje_programacion_fav">Seleccione su lenguaje de programacion favorito</label>
+            <select name="lenguaje_programacion_fav" id="lenguaje_programacion_fav" required>
+                <option value="" disabled selected></option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="C#" disabled>C#</option>
+                <option value="php">PHP</option>
+                <option value="nodejs">Node.js</option>
+            </select> -->
+
+            <!-- <label for="auto_favorito">Seleccione su auto favorito</label>
+            <select name="auto_favorito" id="auto_favorito" required>
+                <option value="" disabled selected>Seleccione una opcion</option>
+                <optgroup label="Ferrari">
+                    <option value="ferrari_LaFerrari">La Ferrari</option>
+                    <option value="ferrari_sf90">SF90</option>
+                    <option value="ferrari_488">488</option>
+                </optgroup>
+                <optgroup label="Lamborghini">
+                    <option value="lamborghini_urus">Urus</option>
+                    <option value="lamborghini_huracan">Huracan</option>
+                    <option value="lamborghini_aventador">Aventador</option>
+                </optgroup>
+                <optgroup label="Porsche">
+                    <option value="porsche_911">911 turbo S</option>
+                    <option value="porsche_cayenne">Cayenne</option>
+                    <option value="porsche_macan">Macan</option>
+                </optgroup>
+            </select> -->
+
+            <label for="lenguaje_favorito">Selecciona tu lenguaje favorito</label>
+            <select name="lenguaje_favorito" id="lenguaje_favorito" class="form-select" multiple size="4" required>
+                <option value="" disabled selected>Seleccione una opcion</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="C#">C#</option>
+                <option value="php">PHP</option>
+                <option value="nodejs">Node.js</option>
+            </select>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
