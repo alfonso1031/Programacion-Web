@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VER datos de usuario</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <h1>Datos del usuario</h1>
+        <table class="table table-bordered">
+            <tr>
+                <td>
+                    <strong>Nombre de usuario:</strong>
+                </td>
+                <td>
+                    <strong>Apellido de usuario</strong>
+                </td>
+                <td>
+                    <strong>Email del usuario</strong>
+                </td>
+            </tr>
+            <tr>
+                <td id="table_nombre">
+
+                </td>
+                <td id="table_apellido">
+
+                </td>
+                <td id="table_email">
+
+                </td>
+                <td id="table_borrar">
+                    <button class="btn btn-danger" onclick="eliminarUsuario()">X</button>
+                </td>
+            </tr>
+
+        </table>
+        <a href="index.html" class="btn btn-danger">Cancelar</a>
+
+    </div>
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/guardar_usuarios_varios.js"></script>
+    <script>
+        var datos_us = localStorage.getItem("datos_usuario");
+        var usuario = JSON.parse(datos_us);
+        console.log(usuario);
+        document.getElementById("table_nombre").innerText = usuario.nombre;
+        document.getElementById("table_apellido").innerText = usuario.apellido;
+        document.getElementById("table_email").innerText = usuario.email;
+
+        function eliminarUsuario() {
+            localStorage.removeItem("datos_usuario");
+            alert("Usuario eliminado correctamente.");
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

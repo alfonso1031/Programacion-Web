@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGRESAR NOMBRE</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <label for="nombre_usuario">Ingrese su nombre</label>
+        <input type="text" autofocus id="nombre_usuario" name="nombre_usuario" placeholder="Ingrese su nombre"
+            class="form-control mb-3">
+        <div class="mt-2">
+            <button class="btn btn-primary" id="btn_guardar" onclick="guardarUsuario()">Guardar</button>    
+            <a class="btn btn-danger" id="btn_cancelar" href="index.html">Cancelar</a>
+        </div>
+    </div>
+
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/guardar_usuario.js"></script>
+</body>
+
+</html>

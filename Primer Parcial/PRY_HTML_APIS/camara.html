@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMARA HTML APIS</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container py-5">
+        <!-- <h1>CAMARA HTML</h1> -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-grid gap-2">
+                    <h1 class="text-success fw-bold" id="txt_estadoRed">Estado de la red</h1>
+                    <button    
+                        class="btn btn-primary"
+                        name="btn-vibrar"
+                        id="btn-vibrar"
+                        onclick="vibrar()" 
+                        type="button">Vibra o no?
+                    </button>
+                </div>
+
+
+                
+                <!-- <video id="my_camera" width="100%" autoplay></video> -->
+
+                <!-- <div class="d-grid gap-2">
+                    <button    
+                        class="btn btn-primary"
+                        name=""
+                        id=""
+                        onclick="tomarFoto()" 
+                        type="button">Tomar Foto
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <canvas id="foto" width="450px" height="400px" style="border: 2px,solid black;"></canvas>
+            </div> -->
+        </div>
+        
+    </div>
+
+
+
+    <script>
+        function vibrar() {
+            navigator.vibrate(20000);
+        }
+
+        function actualizarRed(){
+            let estado = navigator.online;
+            if(estado){
+                document.getElementById('txt_estadoRed').innerText = "Conectado";
+            }else{
+                document.getElementById('txt_estadoRed').innerText = "Desconectado";
+            }
+        }
+        window.addEventListener('online',actualizarRed)
+        actualizarRed();
+    </script>
+    <script src="public/js/camara.js"></script>
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
