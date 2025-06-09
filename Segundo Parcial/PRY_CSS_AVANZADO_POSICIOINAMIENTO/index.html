@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSICIONAMIENTO</title>
+    <style>
+        .caja_saludo_static {
+            position: static;
+            ;
+        }
+
+        .caja_saludo_relative {
+            position: relative;
+            top: 20px;
+            left: 50px;
+            right: 20px;
+            bottom: 10px;
+        }
+        .caja_saludo_absolute {
+            position: absolute;
+            top: 200px;
+            left: 50px;
+        }
+        .caja_saludo_fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .caja_saludo_sticky {
+            position: sticky;
+            top: 0;
+            left: 2px;
+            background-color: white;
+            
+        }
+        div {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja_saludo_static">
+        <h1>
+            Estatico
+        </h1>
+    </div>
+    <div class="caja_saludo_relative">
+        <h1>
+            Relativo
+        </h1>
+    </div>
+    <div class="caja_saludo_absolute">
+        <h1>
+            Absoluto
+        </h1>
+    </div>
+    <div class="caja_saludo_sticky">
+        <h1>
+            Sticky
+        </h1>
+    </div>
+    <div class="caja_saludo_fixed">
+        <h1>
+            Fixed
+        </h1>
+    </div>
+    
+</body>
+
+</html>

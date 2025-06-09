@@ -14,7 +14,6 @@ function cambiarPagina(url) {
     fetch(url)
         .then(res => res.text())
         .then(data => document.getElementById('contenedor_principal').innerHTML = data)
-
 }
 
 window.onload = () => cambiarPagina('./views/inicio.html')

@@ -1,0 +1,11 @@
+/* estilo para el body */
+body {
+    background-color: #F52F;
+    font-family: Arial,Arial, Helvetica, sans-serif;
+}
+/* Estilo para el h1 */
+h1 {
+    color: #00FF;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,65 @@
+.titulo {
+    color: green;
+    font-size: 2em;
+    text-align: center;
+}
+
+.importante {
+    color: red;
+    text-align: center;
+}
+
+.destacado {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: yellow;
+}
+
+body {
+    background-color: #6a98fb;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.fila1 {
+    width: 1000px;
+    font-weight: bold;
+}
+
+.fila2 {
+    font-style: italic;
+}
+
+.fila3 {
+    background-color: #c0c0c0;
+    text-decoration: underline;
+}
+
+.boton_guardar {
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.tabla1 {
+    width: 100%;
+    text-align: center;
+    border-color: black;
+}
+
+.formulario1 {
+    width: 100%;
+    color: blue;
+    text-align: center;
+    margin: 50px;
+}
+
+.input1 {
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 100px;
+}

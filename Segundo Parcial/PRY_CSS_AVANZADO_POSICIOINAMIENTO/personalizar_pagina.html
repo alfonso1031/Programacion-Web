@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOTON PERSONALIZAR PAGINA</title>
+    <style>
+        body {
+            background-color: #eddec2;
+            font-family: Arial, sans-serif;
+        }
+
+        .boton_personalizar {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 10px;
+            background-color: rgb(94, 173, 247);
+            border: none;
+            color: blue;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            font-size: small;
+        }
+
+        .chat {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 10px;
+            background-color: rgb(94, 173, 247);
+            border: none;
+            color: blue;
+            border-radius: 25px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            font-size: small;
+        }
+
+        .titulo {
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        .mensaje {
+            margin-top: 10px;
+            font-size: 14px;
+            color: black;
+            text-align: center;
+        }
+
+        .input-container {
+            margin-top: 10px;
+            padding-top: 1px;
+        }
+
+        #enviar {
+            position: sticky;
+            margin-top: 10px;
+            bottom: 20px;
+            left: 112px;
+            padding: 10px 10px;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            color: black;
+            cursor: pointer;
+            border-radius: 25px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            font-size: small;
+        }
+
+        .logo {
+            position: fixed;
+            top: 200px;
+            left: 500px;
+            align-items: center;
+        }
+        #buscador {
+            align-items: center;
+            margin-top: 10px;
+            padding: 9px;
+        }
+        #buscador-input {
+            padding: 10px;
+            width: 415px;
+
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./public/img/G.png" width="500" alt="Logo">
+        <div class="buscador">
+            <input id="buscador-input" type="text" placeholder="Buscar...">
+            <button id="buscador">Buscar</button>
+        </div>
+    </div>
+    <button class="boton_personalizar">
+        ✏️ Personalizar Página
+    </button>
+    <div class="chat">
+        <div class="titulo">
+            <p>Hola en que te puedo ayudar ✅</p>
+        </div>
+        <div class="mensaje">
+            <p>Ingresar tu solicitud 🗑️</p>
+            <div class="input-container">
+                <form>
+                    <textarea placeholder="Escribe aquí..."></textarea>
+                </form>
+            </div>
+            <button id="enviar">Enviar</button>
+        </div>
+    </div>
+</body>
+
+</html>
