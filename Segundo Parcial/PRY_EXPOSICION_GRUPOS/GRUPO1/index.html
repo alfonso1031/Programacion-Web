@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables CSS</title>
+    <style>
+        :root{
+            --color-fondo: #ffffff;
+            --color-texto: #000000;
+        }
+        body[data-tema="oscuro"] {
+            --color-fondo: #000000;
+            --color-texto: #ffffff;
+        }
+        button{
+            width: 120px;
+            border-radius: 40%;
+        }
+        body {
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            
+        }
+    </style>
+</head>
+<body data-tema="oscuro ">
+    <h1>Fondo</h1>
+    <button onclick="cambiarTema()">Cambiar Fondo</button>
+</body>
+<script>
+    function cambiarTema(){
+        const body = document.body;
+        const temaActual = body.getAttribute('data-tema');
+        body.setAttribute('data-tema',temaActual =="oscuro"? "claro" : "oscuro");
+    }
+</script>
+</html>
