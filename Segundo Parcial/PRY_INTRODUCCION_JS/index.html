@@ -6,21 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a JavaScript</title>
     <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <style>
+        .btn {
+            margin: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>
-        Suma de dos numeros
-    </h1>
-    <label for="num1">Ingrese el primer numero</label>
-    <input class="form-control" type="text" id="num1" placeholder="Ingrese el primer número">
-    <label for="num2">Ingrese el segundo numero</label>
-    <input class="form-control" type="text" id="num2" placeholder="Ingrese el segundo número">
-    <button id="sumarBtn" onclick="sumar()">Sumar</button>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-7 col-sm-6">
+                <h1>Suma de dos numeros</h1>
+                <label for="num1">Ingrese el primer numero</label>
+                <input class="form-control" type="text" id="num1" placeholder="Primer número">
+                <label for="num2">Ingrese el segundo numero</label>
+                <input class="form-control" type="text" id="num2" placeholder="Segundo número">
+                <br>
+                <button class="btn btn-primary" id="sumarBtn" onclick="sumar()">Sumar</button>
+                            </div>
+            <div class="col-lg-12 col-md-7 col-sm-6">
+                <h1>Resta de dos numeros</h1>
+                <label for="num1">Ingrese el primer numero</label>
+                <input class="form-control" type="text" id="num1" placeholder="Primer número">
+                <label for="num2">Ingrese el segundo numero</label>
+                <input class="form-control" type="text" id="num2" placeholder="Segundo número">
+                <br>
+                <button class="btn btn-primary" id="sumarBtn" onclick="sumar()">Sumar</button>
+                <button class="btn btn-secondary" id="restarBtn" onclick="restar()">Restar</button>
+                <button class="btn btn-danger" id="multiplicarBtn" onclick="multiplicar()">Multiplicar</button>
+                <button class="btn btn-success" id="dividirBtn" onclick="dividir()">Dividir</button>
+            </div>
+        </div>
+    </div>
+
 
     <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
-    <script src="public/js/suma.js"></script>
+    <script src="public/js/operaciones.js"></script>
 </body>
 
 </html>
