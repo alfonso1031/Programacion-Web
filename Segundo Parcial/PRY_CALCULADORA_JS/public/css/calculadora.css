@@ -1,0 +1,14 @@
+.card{
+    max-width: 480px;
+
+}
+#pantalla{
+    text-align: right;
+    height: 60px;
+    font-size: 32px;
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
