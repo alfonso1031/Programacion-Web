@@ -59,3 +59,11 @@ function calcularResultado() {
         alert("Por favor, ingrese ambos números y una operación.");
     }
 }   
+
+function limpiarPantalla() {
+    numero_uno = "";
+    numero_dos = "";
+    operacion = "";
+    let txt_pantalla = document.getElementById("pantalla");
+    txt_pantalla.value = "0";
+}
