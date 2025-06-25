@@ -12,66 +12,65 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-4 text-primary">CALCULADORA BASICA CON JS</h1>
-        <div class="card p-5 mx-auto">
-            <input type="number" class="form-control my-2" disabled value="0" id="pantalla">
+        <div class="card p-4 mx-auto" style="max-width: 350px; width: 100%;">
+            <input type="number" class="form-control my-2 text-end" disabled value="0" id="pantalla">
             <div class="row g-2 p-2">
-                <div class="col-3">
-                    <button class="btn btn-secondary" onclick="agregarNumero(7)">7</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-secondary w-100" onclick="agregarNumero(7)">7</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-secondary" onclick="agregarNumero(8)">8</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-secondary w-100" onclick="agregarNumero(8)">8</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-secondary" onclick="agregarNumero(9)">9</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-secondary w-100" onclick="agregarNumero(9)">9</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-warning" onclick="agregarOperacion('+')">+</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-warning w-100" onclick="agregarOperacion('+')">+</button>
                 </div>
             </div>
             <div class="row g-2 p-2">
-                <div class="col-3">
-                    <button class="btn btn-secondary" onclick="agregarNumero(4)">4</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-secondary w-100" onclick="agregarNumero(4)">4</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-secondary" onclick="agregarNumero(5)">5</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-secondary w-100" onclick="agregarNumero(5)">5</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-secondary" onclick="agregarNumero(6)">6</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-secondary w-100" onclick="agregarNumero(6)">6</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-warning" onclick="agregarOperacion('-')">-</button>
-                </div>
-            </div>
-            <div class="row g-2 p-2">
-                <div class="col-3">
-                    <button class="btn btn-secondary" onclick="agregarNumero(1)">1</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-secondary" onclick="agregarNumero(2)">2</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-secondary" onclick="agregarNumero(3)">3</button>
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-warning" onclick="agregarOperacion('*')">*</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-warning w-100" onclick="agregarOperacion('-')">-</button>
                 </div>
             </div>
             <div class="row g-2 p-2">
-                <div class="col-3">
-                    <button class="btn btn-danger" onclick="limpiarPantalla()">C</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-secondary w-100" onclick="agregarNumero(1)">1</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-secondary" onclick="agregarNumero(0)">0</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-secondary w-100" onclick="agregarNumero(2)">2</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-success" onclick="calcularResultado()">=</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-secondary w-100" onclick="agregarNumero(3)">3</button>
                 </div>
-                <div class="col-3">
-                    <button class="btn btn-warning" onclick="agregarOperacion('/')">/</button>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-warning w-100" onclick="agregarOperacion('*')">*</button>
+                </div>
+            </div>
+            <div class="row g-2 p-2">
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-danger w-100" onclick="limpiarPantalla()">C</button>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-secondary w-100" onclick="agregarNumero(0)">0</button>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-success w-100" onclick="calcularResultado()">=</button>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <button class="btn btn-warning w-100" onclick="agregarOperacion('/')">/</button>
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="./public/js/calculadora.js"></script>
