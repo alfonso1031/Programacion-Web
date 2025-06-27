@@ -1,5 +1,3 @@
-// script.js
-
 // Helper para acceder al elemento de salida
 const output = id => document.getElementById(id);
 
@@ -60,7 +58,9 @@ function calcularArchivo(el) {
 }
 
 function calcularRango(el) {
-  output('outRange').textContent = `Valor: ${el.value}`;
+  let rango = el.value;
+  // Actualizar el párrafo con el valor actual del rango
+  document.getElementById('rangeValue').innerHTML = `Valor actual: ${el.value}`;
 }
 
 function calcularColor(el) {
@@ -125,8 +125,8 @@ function eventoBoton() {
 function validarEnvio(evt) {
   evt.preventDefault();
   const txt = document.getElementById('txt'),
-        email = document.getElementById('email'),
-        out = output('outForm');
+    email = document.getElementById('email'),
+    out = output('outForm');
 
   if (txt.value && email.value.includes('@')) {
     out.textContent = '✅ Formulario enviado!';
