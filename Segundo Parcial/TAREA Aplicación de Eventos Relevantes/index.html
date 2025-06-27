@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario Completo con Bootstrap</title>
+  <!-- Bootstrap CSS (CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .highlight { background: #fff3cd !important; }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="mb-4">Ejemplos de Inputs y Eventos</h1>
+    <form id="mainForm" class="row g-3">
+      <!-- Texto corto -->
+      <div class="col-md-6">
+        <label for="txt" class="form-label">Texto corto</label>
+        <input id="txt" type="text" class="form-control" placeholder="Escribe algo..." />
+        <div id="outTxt" class="form-text"></div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-6">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input id="email" type="email" class="form-control" placeholder="usuario@ejemplo.com" />
+        <div id="outEmail" class="form-text"></div>
+      </div>
+
+      <!-- Número -->
+      <div class="col-md-4">
+        <label for="num" class="form-label">Número (1–10)</label>
+        <input id="num" type="number" min="1" max="10" class="form-control" />
+        <div id="outNum" class="form-text"></div>
+      </div>
+
+      <!-- Contraseña -->
+      <div class="col-md-4">
+        <label for="pwd" class="form-label">Contraseña</label>
+        <input id="pwd" type="password" class="form-control" placeholder="Mínimo 8 caracteres" />
+        <div id="outPwd" class="form-text"></div>
+      </div>
+
+      <!-- Fecha -->
+      <div class="col-md-4">
+        <label for="date" class="form-label">Fecha</label>
+        <input id="date" type="date" class="form-control" />
+        <div id="outDate" class="form-text"></div>
+      </div>
+
+      <!-- Hora -->
+      <div class="col-md-4">
+        <label for="time" class="form-label">Hora</label>
+        <input id="time" type="time" class="form-control" />
+        <div id="outTime" class="form-text"></div>
+      </div>
+
+      <!-- Archivo -->
+      <div class="col-md-4">
+        <label for="file" class="form-label">Archivo</label>
+        <input id="file" type="file" class="form-control" />
+        <div id="outFile" class="form-text"></div>
+      </div>
+
+      <!-- Rango -->
+      <div class="col-md-4">
+        <label for="rng" class="form-label">Rango (0–100)</label>
+        <input id="rng" type="range" min="0" max="100" class="form-range" />
+        <div id="outRange" class="form-text"></div>
+      </div>
+
+      <!-- Color -->
+      <div class="col-md-4">
+        <label for="color" class="form-label">Selector de color</label>
+        <input id="color" type="color" class="form-control form-control-color" />
+        <div id="outColor" class="form-text"></div>
+      </div>
+
+      <!-- Teléfono y URL -->
+      <div class="col-md-6">
+        <label for="tel" class="form-label">Teléfono</label>
+        <input id="tel" type="tel" class="form-control" placeholder="Solo dígitos" />
+        <div id="outTel" class="form-text"></div>
+      </div>
+      <div class="col-md-6">
+        <label for="url" class="form-label">URL</label>
+        <input id="url" type="url" class="form-control" placeholder="http://..." />
+        <div id="outUrl" class="form-text"></div>
+      </div>
+
+      <!-- Checkbox -->
+      <fieldset class="col-md-6">
+        <legend class="col-form-label pt-0">Casillas múltiples</legend>
+        <div class="form-check">
+          <input class="form-check-input" name="chk" type="checkbox" value="A" id="chkA" />
+          <label class="form-check-label" for="chkA">A</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="chk" type="checkbox" value="B" id="chkB" />
+          <label class="form-check-label" for="chkB">B</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="chk" type="checkbox" value="C" id="chkC" />
+          <label class="form-check-label" for="chkC">C</label>
+        </div>
+        <div id="outChk" class="form-text"></div>
+      </fieldset>
+
+      <!-- Radio -->
+      <fieldset class="col-md-6">
+        <legend class="col-form-label pt-0">Opción única</legend>
+        <div class="form-check">
+          <input class="form-check-input" name="rad" type="radio" value="X" id="radX" />
+          <label class="form-check-label" for="radX">X</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="rad" type="radio" value="Y" id="radY" />
+          <label class="form-check-label" for="radY">Y</label>
+        </div>
+        <div id="outRad" class="form-text"></div>
+      </fieldset>
+
+      <!-- Select -->
+      <div class="col-md-6">
+        <label for="sel" class="form-label">Lista desplegable</label>
+        <select id="sel" class="form-select">
+          <option value="">-- Elige --</option>
+          <option value="1">Uno</option>
+          <option value="2">Dos</option>
+        </select>
+        <div id="outSel" class="form-text"></div>
+      </div>
+
+      <!-- Textarea -->
+      <div class="col-md-6">
+        <label for="ta" class="form-label">Texto largo</label>
+        <textarea id="ta" rows="3" class="form-control"></textarea>
+        <div id="outTa" class="form-text"></div>
+      </div>
+
+      <!-- Botones -->
+      <div class="col-12 d-flex gap-2">
+        <button id="btn" type="button" class="btn btn-primary">Botón</button>
+        <input id="sub" type="submit" class="btn btn-success" value="Enviar" />
+        <input type="reset" class="btn btn-secondary" value="Resetear" />
+      </div>
+
+      <!-- Resultado formulario -->
+      <div class="col-12">
+        <div id="outForm" class="alert alert-info d-none"></div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS (CDN) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    defer
+  ></script>
+  <script src="eventos.js" defer></script>
+</body>
+</html>

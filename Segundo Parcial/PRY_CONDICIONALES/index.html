@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDICIONALES</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container my-5 py-5">
+        <h1>EDAD DE PERSONA</h1>
+        <label for="edad">Ingrese su edad:</label>
+        <input type="number" id="edad" class="form-control" placeholder="Ingrese su edad" 
+        onkeypress="calcularEdad(this)" onkeydown="calcularEdad(this)" onkeyup="calcularEdad(this)">
+        <p id="p_edad"></p>
+
+        <h1>GENERO</h1>
+        <label for="genero">Ingrese M=Mujer H=Hombre</label>
+        <input type="text" id="genero" class="form-control" placeholder="Ingrese su genero"
+        onkeypress="calcularGenero(this)" onkeydown="calcularGenero(this)" onkeyup="calcularGenero(this)">
+        <p id="p_genero"></p>
+
+        <h1>HORA</h1>
+        <label for="hora">Ingrese la hora:</label>
+        <input type="time" id="hora" class="form-control" placeholder="Ingrese la hora"
+        onkeypress="calcularHora(this)">
+        <p id="p_hora"></p>
+    </div>
+
+    <script src="./public/js/calcular_hora.js"></script>
+    <script src="./public/js/calcular_edad.js"></script>
+    <script src="./public/js/calcular_genero.js"></script>
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
