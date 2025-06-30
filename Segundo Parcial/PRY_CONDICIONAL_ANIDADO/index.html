@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso al usuario</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark text-white">
+    <h1 class="text-center">Acceso al usuario</h1>
+    <div class="container">
+        <div class="card bg-secondary border border-2 border-black p-2">
+            <form id="formulario">
+                <div class="col-md-6">
+                    <div class="py-3 mx-2 mb-2">
+                        <label class="form-check-label" for="radActivo">Activo</label>
+                        <input class="form-check-input" name="rad" type="radio" value="activo" id="radActivo" 
+                        onchange="seleccionarEstado(this)"/>
+                        <label class="form-check-label" for="radInactivo">Inactivo</label>
+                        <input class="form-check-input" name="rad" type="radio" value="inactivo" id="radInactivo" 
+                        onchange="seleccionarEstado(this)"/>
+                    </div>
+                    <label for="usuario" class="form-label">Seleccionar usuario</label>
+                    <select id="usuario" class="form-select" onchange="seleccionarUsuario(this)">
+                        <option value="">-- Elige --</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="admin">Admin</option>
+                        <option value="docente">Docente</option>
+                        <option value="estudiante">Estudiante</option>
+                    </select>
+                    <h4 class="fw-bold py-6"></h4>
+                </div>
+            </form>
+        </div>
+        <div id="resultado" class="mt-4"></div>
+    </div>
+
+    <script src="./public/js/acceso_usuario.js"></script>
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
