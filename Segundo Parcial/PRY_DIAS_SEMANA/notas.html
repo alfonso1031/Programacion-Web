@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH CON CALIFICACIONES</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1 class="text-center">NOTAS</h1>
+    <div class="card col-4 allign-items-center">
+
+        <label for="nota1" class="form-label">Ingrese la nota 1:</label>
+        <input type="number" name="nota1" id="nota1" class="form-control" step="0.01">
+        <label for="nota2" class="form-label">Ingrese la nota 2:</label>
+        <input type="number" name="nota2" id="nota2" class="form-control" step="0.01">
+        <label for="nota3" class="form-label">Ingrese la nota 3:</label>
+        <input type="number" name="nota3" id="nota3" class="form-control" step="0.01">
+        <button class="btn btn-primary mt-3" id="calcular_btn" onclick="calcularNota()">Calcular</button>
+
+    </div>
+    <div class="card col-4 allign-items-center mt-3 py-3">
+        <h4 class="text-success fw-bold" id="resultado"></h4>
+    </div>
+
+    <script src="./public/js/calcular_nota.js"></script>
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
