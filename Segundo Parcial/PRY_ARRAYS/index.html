@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <label for="notas">Ingrese sus notas, separados por comas (,)</label>
+        <input type="text" id="notas" class="form-control" placeholder="Ej: 5, 4, 3" onkeyup="mostrarNotas()">
+        <p id="resultado">
+        <ul id="ul_notas">
+
+        </ul>
+        <p id="promedio"></p>
+        </p>
+        <button id="btnAgregar" class="btn btn-secondary" onclick="agregar20()">Agregar nota de 20</button>
+
+    </div>
+
+    <script src="../bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/arrays.js"></script>
+</body>
+
+</html>
